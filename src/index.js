@@ -1,5 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './css/custom.scss';
+import App from './App';
+// import Extra from './Extra'
 
-render(<h1 className='red'>Hello, World</h1>, document.getElementById('root'));
+render(<App/>, document.getElementById('root'));
