@@ -5,7 +5,6 @@ const app = express();
 
 app.use(express.static('dist'));
 app.use(express.static('public'));
-
 app.get('/api', (req, res) => {
     axios.get(`http://www.mocky.io/v2/5d5cba7e320000a5e4628f33?apikey=${process.env.APIKEY}`)
         .then((result) => {
